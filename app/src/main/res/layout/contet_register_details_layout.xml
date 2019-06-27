@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/enter_below_details"
+            android:textSize="22dp"
+            android:layout_gravity="center"
+            android:textStyle="bold"
+            android:typeface="sans"
+            android:layout_marginBottom="20dp"
+            android:textColor="@color/font_colorBlack"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_Name_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Name"
+                    android:inputType="text"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_Email_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Email Address"
+                    android:inputType="textEmailAddress"
+                    android:imeOptions="actionNext"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_password_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Password"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_confirm_password_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Confirm Password"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:inputType="textPassword"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="5dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_mobile_Register"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Mobile Number"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:inputType="number"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</merge>

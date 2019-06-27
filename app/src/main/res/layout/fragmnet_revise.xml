@@ -1,0 +1,346 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/rl_select_category_revise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Category"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_category_reviseFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_category"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"
+                    android:cursorVisible="false"/>
+
+                <ImageButton
+                    android:id="@+id/btnpetReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_category"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_category_reviseFragment"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_subject_revise"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Subject"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_subject_reviseFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_subject"
+                    android:imeOptions="actionNext"
+                    android:cursorVisible="false"
+                    android:scrollbars="none"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_petReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_subject"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_subject_reviseFragment"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_topic_record"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Topic"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_topic_reviseFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_topic"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"
+                    android:cursorVisible="false"/>
+
+                <ImageButton
+                    android:id="@+id/btn_Reg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_alignTop="@id/edt_selcet_topic_reviseFragment"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="-11dp"
+                    android:layout_toRightOf="@id/txt_topic"
+                    android:background="@drawable/rc_down_arrow"
+                    android:visibility="visible" />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imgbtn_filter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rc_filter"
+                android:layout_marginLeft="12dp"
+                />
+
+        </LinearLayout>
+        <RelativeLayout
+            android:id="@+id/rl_select_subject_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Select Subject"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#C9C9C9"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_selcet_subject_revise"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="none"
+                android:layout_alignParentRight="true"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/colorOffWhite"
+                android:textColor="@color/font_colorBlack"
+                android:textStyle="bold"
+                android:text="Biology"
+                android:imeOptions="actionNext"
+                android:gravity="end"
+                android:paddingRight="50dp"/>
+            <ImageButton
+                android:id="@+id/b_petReg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rc_down_arrow"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_content"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/rl_select_subject_record"
+            >
+            <include layout="@layout/content_revise_fragmnet"
+                android:id="@+id/content_register"
+                ></include>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_revise"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_alignParentBottom="true"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:visibility="visible"
+            android:layout_marginBottom="10dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_prevoius"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <Button
+                    android:id="@+id/btn_prevoius"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_back"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:layout_toRightOf="@id/btn_prevoius"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_revise_main"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <Button
+                    android:id="@+id/btn_rstart_revise"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rc_play"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rprevious_revise"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:background="@drawable/bg_btn_roundcorner_blck"
+                    android:layout_toLeftOf="@id/btn_rstart_revise"
+                    android:src="@drawable/ic_pevoius"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    />
+                <Button
+                    android:id="@+id/btn_rpause_revise"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/btn_rstart_revise"
+                    android:background="@drawable/rc_push"
+                    android:layout_centerVertical="true"
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_next"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+                <Button
+                    android:id="@+id/btn_next_a"
+                    android:layout_width="20dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rc_next"
+                    android:layout_alignParentRight="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_toLeftOf="@id/btn_next_a"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+    </LinearLayout>
+</LinearLayout>

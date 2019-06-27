@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.MakePaymentDetailActivity">
+
+
+    <include layout="@layout/layout_actionbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_relative_gradient">
+
+        </RelativeLayout>
+
+        <include layout="@layout/content_makepayment_layout"
+                 android:id="@+id/content_register"></include>
+
+     <!--   <LinearLayout
+            android:id="@+id/ll_code_Layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:layout_below="@id/content_register"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:gravity="center_vertical"
+            >
+
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="5dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginBottom="18dp"
+                >
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_enter_code_Register"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_btn_roundcorner_white"
+                        android:hint="Enter Code"
+                        android:inputType="textEmailAddress"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"/>
+
+                </LinearLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v4.widget.Space
+                android:layout_width="60dp"
+                android:layout_height="wrap_content" />
+            <Button
+                android:id="@+id/btn_procced_Login"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:text="Proceed"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_roundcorner_orange"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline"
+            android:layout_above="@id/ll_code_Layout"
+            ></View>-->
+
+        <LinearLayout
+            android:id="@+id/ll_bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:weightSum="2"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:visibility="visible"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="If you are using this app on your own as a student, please click below to make the payment"
+                android:textSize="18dp"
+                android:gravity="center_horizontal"
+                android:layout_gravity="center_horizontal"
+                android:typeface="sans"
+                android:layout_marginBottom="15dp"
+                android:textColor="@color/colorGrey_btn"
+                />
+
+            <Button
+                android:id="@+id/btn_Payment_makePayment"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Make Payment"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_roundcorner_orange"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline"
+            android:layout_above="@id/ll_bottomLayout"
+            ></View>
+    </RelativeLayout>
+
+</LinearLayout>

@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    tools:context=".activity.RegisterActivity">
+
+    <include layout="@layout/layout_actionbar"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:background="@drawable/bg_relative_gradient">
+
+        </RelativeLayout>
+
+        <include layout="@layout/content_register_layout"
+                 android:id="@+id/content_register"></include>
+
+
+        <LinearLayout
+            android:id="@+id/ll_bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="2"
+            android:paddingTop="15dp"
+            android:paddingBottom="15dp"
+            android:visibility="visible"
+            android:paddingRight="20dp"
+            android:paddingLeft="20dp"
+            android:gravity="center_vertical"
+            android:background="@color/colorWhite"
+            android:layout_alignParentBottom="true">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:layout_weight="1"
+                android:typeface="sans"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/i_don_t_have_code"/>
+
+            <Button
+                android:id="@+id/btn_makePaymnet_register"
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="@string/make_payment"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_marginBottom="1dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginRight="1dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_roundcorner_yellow"/>
+
+        </LinearLayout>
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline"
+            android:layout_above="@id/ll_bottomLayout"
+            ></View>
+    </RelativeLayout>
+
+</LinearLayout>

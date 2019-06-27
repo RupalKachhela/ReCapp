@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:visibility="gone">
+        <include layout="@layout/layout_home_actionbar"
+            ></include>
+    </RelativeLayout>
+
+    <android.support.v4.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+      >
+
+    <RelativeLayout
+        android:id="@+id/rl_add_SubjectDetail"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:background="@drawable/bg_relative_gradient">
+
+
+        <LinearLayout
+            android:id="@+id/content_addSubject"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:paddingTop="10dp"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:paddingBottom="5dp"
+            android:layout_marginTop="20dp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="18dp"
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_select_subName_SubjectDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_btn_roundcorner_white"
+                        android:hint="Subject Name"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorOffWhite"
+                        android:textColor="@color/colorOrange"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"/>
+                    <ImageButton
+                        android:id="@+id/btn_select_subName_SubjectDetail"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rc_down_arrow"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="3dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="18dp"
+
+                >
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_select_topic_SubjectDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_btn_roundcorner_white"
+                        android:hint="Topic Name"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:focusableInTouchMode="true"
+                        android:textColorHint="@color/colorOffWhite"
+                        android:textColor="@color/colorOrange"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"/>
+                    <ImageButton
+                        android:id="@+id/btn_select_topic_SubjectDetail"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rc_down_arrow"
+                        android:visibility="gone"
+                        />
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="3dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_select_topicname_SubjectDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_btn_roundcorner_white"
+                        android:focusableInTouchMode="true"
+                        android:gravity="center"
+                        android:hint="Sub Topic Name"
+                        android:imeOptions="actionDone"
+                        android:inputType="none"
+                        android:singleLine="true"
+                        android:textColor="@color/colorOrange"
+                        android:textColorHint="@color/colorOffWhite" />
+                    <ImageButton
+                        android:id="@+id/btn_select_topicname_SubjectDetail"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rc_down_arrow"
+                        android:visibility="gone"
+                        />
+
+
+                </RelativeLayout>
+
+            </android.support.v7.widget.CardView>
+            <android.support.v7.widget.CardView
+                android:layout_width="300dp"
+                android:layout_height="50dp"
+                app:cardCornerRadius="28dp"
+                app:cardElevation="3dp"
+                android:layout_marginBottom="18dp"
+                android:layout_gravity="center_horizontal"
+
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <EditText
+                        android:id="@+id/edt_select_audioType_SubjectDetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="50dp"
+                        android:background="@drawable/bg_btn_roundcorner_white"
+                        android:hint="Select Audio Type"
+                        android:inputType="none"
+                        android:focusableInTouchMode="false"
+                        android:textColorHint="@color/colorOffWhite"
+                        android:textColor="@color/colorOrange"
+                        android:imeOptions="actionNext"
+                        android:gravity="center"/>
+                    <ImageButton
+                        android:id="@+id/btn_select_audioType_SubjectDetail"
+                        android:layout_width="20dp"
+                        android:layout_height="20dp"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="20dp"
+                        android:background="@drawable/rc_down_arrow"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_bottomLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:paddingTop="15dp"
+            android:visibility="visible"
+            android:paddingBottom="15dp"
+            android:orientation="vertical"
+            android:background="@color/colorWhite"
+            android:layout_below="@id/content_addSubject"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_startRecording_addSubject"
+                android:layout_width="260dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:background="@drawable/bg_btn_roundcorner_pink">
+                <RelativeLayout
+                    android:id="@+id/btnRecording"
+                    android:layout_width="38dp"
+                    android:layout_height="30dp"
+                    android:layout_marginLeft="20dp"
+                    android:layout_centerVertical="true"
+                    android:background="@drawable/rc_unselected_redio"/>
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Start Recording"
+                    android:textColor="@color/colorWhite"
+                    android:textSize="23dp"
+                    android:textStyle="bold"
+                    android:layout_toRightOf="@id/btnRecording"
+                    android:paddingLeft="10dp"
+                    android:layout_marginRight="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"/>
+            </RelativeLayout>
+
+
+        </LinearLayout>
+    </RelativeLayout>
+
+    </android.support.v4.widget.NestedScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rl_add_newSubject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="gone">
+
+        <android.support.v7.widget.CardView
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            android:layout_centerInParent="true">
+
+            <RelativeLayout
+                android:id="@+id/card_addSubject_home"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/btnAdd_subjectHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/plus_add"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add New Subject"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/colorGrey_btn"
+                    android:layout_below="@id/btnAdd_subjectHome"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+
+</LinearLayout>

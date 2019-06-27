@@ -1,0 +1,482 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_select_category_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txt_category"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selected Category"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:textColor="#C9C9C9"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/edt_selcet_category_recordFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorWhite"
+                            android:inputType="none"
+                            android:focusableInTouchMode="false"
+                            android:textColorHint="@color/colorOffWhite"
+                            android:textColor="@color/font_colorBlack"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_below="@id/txt_category"
+                            android:imeOptions="actionNext"
+                            android:paddingRight="20dp"
+                            android:cursorVisible="false"/>
+
+                        <ImageButton
+                            android:id="@+id/btnpetReg"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@id/txt_category"
+                            android:background="@drawable/rc_down_arrow"
+                            android:layout_alignTop="@id/edt_selcet_category_recordFragment"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="4dp"
+                        android:layout_marginRight="4dp"
+                        android:background="@color/colorGrey_lightline"></View>
+                    <RelativeLayout
+                        android:id="@+id/rl_select_subject_record"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txt_subject"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selected Subject"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:textColor="#C9C9C9"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"/>
+
+                        <EditText
+                            android:id="@+id/edt_selcet_subject_recordFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorWhite"
+                            android:inputType="none"
+                            android:focusableInTouchMode="false"
+                            android:textColorHint="@color/colorOffWhite"
+                            android:textColor="@color/font_colorBlack"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_below="@id/txt_subject"
+                            android:imeOptions="actionNext"
+                            android:paddingRight="20dp"
+                            android:cursorVisible="false"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_petReg"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="-20dp"
+                            android:layout_toRightOf="@id/txt_subject"
+                            android:background="@drawable/rc_down_arrow"
+                            android:layout_alignTop="@id/edt_selcet_subject_recordFragment"
+                            android:layout_marginTop="15dp"
+                            android:visibility="gone"
+                            />
+
+                    </RelativeLayout>
+
+                    <ImageButton
+                        android:id="@+id/imgbtn_filter"
+                        android:layout_width="25dp"
+                        android:layout_height="25dp"
+                        android:background="@drawable/rc_filter"
+                        android:layout_gravity="right"
+                        />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RelativeLayout
+                        android:id="@+id/rl_select_topic_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/txt_topic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            android:text="Selected Topic"
+                            android:textColor="#C9C9C9"
+                            android:textSize="13dp"
+                            android:textStyle="bold" />
+
+                        <EditText
+                            android:id="@+id/edt_selcet_topic_recordFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_below="@id/txt_topic"
+                            android:layout_marginTop="-10dp"
+                            android:backgroundTint="@color/colorWhite"
+                            android:focusableInTouchMode="false"
+                            android:imeOptions="actionNext"
+                            android:inputType="none"
+                            android:paddingRight="20dp"
+                            android:textColor="@color/font_colorBlack"
+                            android:textColorHint="@color/colorOffWhite"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            android:cursorVisible="false"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_topic"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@id/txt_topic"
+                            android:background="@drawable/rc_down_arrow"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+                    <View
+                        android:layout_width="1dp"
+                        android:layout_height="50dp"
+                        android:layout_marginRight="4dp"
+                        android:layout_marginLeft="-20dp"
+                        android:background="@color/colorGrey_lightline"></View>
+
+                    <RelativeLayout
+                        android:id="@+id/rl_select_subtopic_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_weight="1">
+
+                        <TextView
+                            android:id="@+id/txt_subtopic"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Selected Sub Topic"
+                            android:textSize="13dp"
+                            android:textStyle="bold"
+                            android:textColor="#C9C9C9"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center_vertical"
+                            />
+
+                        <EditText
+                            android:id="@+id/edt_selcet_subtopic_recordFragment"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:backgroundTint="@color/colorWhite"
+                            android:inputType="none"
+                            android:focusableInTouchMode="false"
+                            android:textColorHint="@color/colorOffWhite"
+                            android:textColor="@color/font_colorBlack"
+                            android:textStyle="bold"
+                            android:textSize="15dp"
+                            android:layout_marginTop="-10dp"
+                            android:layout_below="@id/txt_subtopic"
+                            android:imeOptions="actionNext"
+                            android:paddingRight="20dp"
+                            android:cursorVisible="false"/>
+
+                        <ImageButton
+                            android:id="@+id/btn_subtopic"
+                            android:layout_width="15dp"
+                            android:layout_height="15dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="3dp"
+                            android:layout_toRightOf="@id/txt_subtopic"
+                            android:background="@drawable/rc_down_arrow"
+                            android:visibility="visible" />
+
+                    </RelativeLayout>
+
+                </LinearLayout>
+            </LinearLayout>
+
+        </LinearLayout>
+
+      <!--  <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/rl_select_category_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Category"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_category_recordConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_category"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/btnpetReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_category"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_category_recordConfirm"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_subject_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Subject"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_subject_recordConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_subject"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_petReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_subject"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_subject_recordConfirm"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_topic_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Topic"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_topic_recordConfirm"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_topic"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"/>
+
+                <ImageButton
+                    android:id="@+id/btn_Reg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_topic"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_topic_recordConfirm"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imgbtn_filter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rc_filter"
+                android:layout_marginLeft="12dp"
+                />
+
+        </LinearLayout>-->
+
+
+
+        <RelativeLayout
+            android:id="@+id/rl_select_subject_dlete"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:visibility="gone">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Select Subject"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#C9C9C9"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_selcet_subject_delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="none"
+                android:layout_alignParentRight="true"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/colorOffWhite"
+                android:textColor="@color/font_colorBlack"
+                android:textStyle="bold"
+                android:text="Biology"
+                android:imeOptions="actionNext"
+                android:gravity="end"
+                android:paddingRight="50dp"/>
+            <ImageButton
+                android:id="@+id/btn_petRfeg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rc_down_arrow"
+                />
+
+
+
+        </RelativeLayout>
+
+        <include layout="@layout/content_record__confirm_fragmnet"
+            ></include>
+
+    </LinearLayout>
+
+
+</LinearLayout>

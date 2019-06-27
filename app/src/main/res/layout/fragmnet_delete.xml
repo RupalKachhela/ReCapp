@@ -1,0 +1,296 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:id="@+id/main_delete"
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:weightSum="3">
+            <RelativeLayout
+                android:id="@+id/rl_select_category_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_category"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Category"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_category_deleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_category"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"
+                    android:cursorVisible="false"/>
+
+                <ImageButton
+                    android:id="@+id/btnpetReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_category"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_category_deleteFragment"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_subject_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_subject"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Subject"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_subject_deleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_subject"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"
+                    android:cursorVisible="false"/>
+
+                <ImageButton
+                    android:id="@+id/btn_petReg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="-20dp"
+                    android:layout_toRightOf="@id/txt_subject"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_subject_deleteFragment"
+                    android:layout_marginTop="15dp"
+                    android:visibility="gone"
+                    />
+
+            </RelativeLayout>
+            <View
+                android:layout_width="1dp"
+                android:layout_height="50dp"
+                android:layout_marginLeft="4dp"
+                android:layout_marginRight="4dp"
+                android:background="@color/colorGrey_lightline"></View>
+            <RelativeLayout
+                android:id="@+id/rl_select_topic_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:layout_weight="1">
+
+                <TextView
+                    android:id="@+id/txt_topic"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Selected Topic"
+                    android:textSize="13dp"
+                    android:textStyle="bold"
+                    android:textColor="#C9C9C9"
+                    android:layout_marginBottom="5dp"
+                    android:gravity="center_vertical"/>
+
+                <EditText
+                    android:id="@+id/edt_selcet_topic_deleteFragment"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@color/colorWhite"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/font_colorBlack"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:layout_marginTop="-10dp"
+                    android:layout_below="@id/txt_topic"
+                    android:imeOptions="actionNext"
+                    android:paddingRight="20dp"
+                    android:cursorVisible="false"/>
+
+                <ImageButton
+                    android:id="@+id/btn_Reg"
+                    android:layout_width="15dp"
+                    android:layout_height="15dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_toRightOf="@id/txt_topic"
+                    android:background="@drawable/rc_down_arrow"
+                    android:layout_alignTop="@id/edt_selcet_topic_deleteFragment"
+                    android:layout_marginTop="-11dp"
+                    android:visibility="visible"
+                    />
+
+            </RelativeLayout>
+
+            <ImageButton
+                android:id="@+id/imgbtn_filter"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/rc_filter"
+                android:layout_marginLeft="12dp"
+                />
+
+        </LinearLayout>
+
+       <!-- <RelativeLayout
+            android:id="@+id/rl_select_subject_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Select Subject"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#C9C9C9"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_selcet_subject_delete"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="none"
+                android:layout_alignParentRight="true"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/colorOffWhite"
+                android:textColor="@color/font_colorBlack"
+                android:textStyle="bold"
+                android:text="Biology"
+                android:imeOptions="actionNext"
+                android:gravity="end"
+                android:paddingRight="50dp"/>
+            <ImageButton
+                android:id="@+id/btn_petReg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_down"
+                />
+        </RelativeLayout>-->
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:paddingBottom="80dp"
+            android:layout_below="@id/main_delete">
+
+            <include layout="@layout/content_delete_fragmnet"
+                ></include>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_weight="2"
+            android:layout_marginBottom="10dp"
+            android:paddingBottom="15dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="10dp"
+            android:layout_alignParentBottom="true"
+            android:background="@color/colorWhite"
+            android:paddingTop="5dp"
+            >
+
+            <Button
+                android:id="@+id/btn_No_delete"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="No! Don't Delete!"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_weight="1"
+                android:layout_marginTop="2dp"
+                android:layout_marginBottom="2dp"
+                android:layout_gravity="center"
+                android:background="@drawable/bg_btn_roundcorner_grey"/>
+
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_yes_delete"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:text="Yes, Delete!"
+                android:textColor="@color/colorWhite"
+                android:textAllCaps="false"
+                android:textStyle="bold"
+                android:textSize="18dp"
+                android:layout_marginBottom="2dp"
+                android:layout_weight="1"
+                android:layout_gravity="center"
+                android:layout_marginTop="2dp"
+                android:background="@drawable/bg_btn_roundcorner_orange"/>
+
+        </LinearLayout>
+    </RelativeLayout>
+
+
+
+</LinearLayout>

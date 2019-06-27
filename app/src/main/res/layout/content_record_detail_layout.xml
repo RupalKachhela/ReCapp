@@ -1,0 +1,365 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_record_detail_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="How To record :"
+            android:textSize="20dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/font_colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/first_record_what_you_are_defining_explaning_summarazing_for_example"/>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/actual_defination"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/next_question_answer"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/finally_saved"/>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorGrey_lightline"></View>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_showMsgAgain_record"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:backgroundTint="@color/colorPink"
+                android:button="@drawable/checkbox_selector" />
+            <TextView
+                android:id="@+id/btn_ecord"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/font_colorBlack"
+                android:textSize="17dp"
+                android:text="Dont show this message again"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_proceed_record"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Proceed"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="1dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_roundcorner_pink"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_record_detail_audioplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        android:paddingBottom="20dp"
+        >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+          android:visibility="gone"
+        android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Definatin of DNA"
+                android:textStyle="bold"
+                android:textColor="@color/font_colorBlack"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/for_example_say_definition_of_dna"
+                android:layout_below="@id/txt_playing"
+                android:textSize="15dp"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            android:layout_marginTop="60dp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_addphoto_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/ic_placeholder"
+                        android:scaleType="fitXY"
+                        />
+                    <RelativeLayout
+                        android:id="@+id/img_edit_record"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rc_edit"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="15dp"
+                        android:visibility="gone"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/img_delete_record"
+                        android:layout_width="50dp"
+                        android:layout_height="50dp"
+                        android:background="@drawable/rc_delete_menu"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:visibility="gone"
+                        android:layout_marginTop="-5dp"
+                        android:layout_below="@id/img_edit_record"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_rstart_record"
+                    android:layout_width="70dp"
+                    android:layout_height="70dp"
+                    android:background="@drawable/rc_audio_restart"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rstop_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_hold"
+                    android:layout_toLeftOf="@id/btn_rstart_record"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rprevious_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_audio_back"
+                    android:layout_toLeftOf="@id/btn_rstop_record"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rplay_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_play"
+                    android:layout_toRightOf="@id/btn_rpause_record"
+                    android:scaleType="fitXY"
+                    android:layout_margin="5dp"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rpause_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/btn_rstart_record"
+                    android:background="@drawable/rc_push"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_next_record"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            >
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/rc_next"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:paddingRight="5dp"
+                android:layout_toLeftOf="@id/btn_next"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"/>
+
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+
+
+
+
+</merge>

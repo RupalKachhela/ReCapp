@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/rl_action_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorOrange"
+        android:orientation="horizontal">
+
+        <RelativeLayout
+            android:id="@+id/rl"
+            android:layout_width="match_parent"
+            android:layout_height="30dp">
+        </RelativeLayout>
+        <RelativeLayout
+            android:id="@+id/rl_action"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:layout_below="@id/rl"
+            >
+            <Button
+                android:id="@+id/btn_back"
+                android:layout_width="32dp"
+                android:layout_height="40dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="gone"
+                android:layout_centerVertical="true"
+                android:background="@drawable/rc_back_white"
+                />
+
+            <TextView
+                android:id="@+id/txt_actionbar_title"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home Page"
+                android:textColor="@color/colorWhite"
+                android:textStyle="bold"
+                android:textSize="22dp"
+                android:layout_centerVertical="true"
+                android:layout_centerHorizontal="true"/>
+
+            <Button
+                android:id="@+id/btn_menu"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                android:background="@drawable/rc_menu"
+                />
+
+            <Button
+                android:id="@+id/btn_help"
+                android:layout_width="32dp"
+                android:layout_height="32dp"
+                android:textStyle="bold"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:visibility="visible"
+                android:layout_centerVertical="true"
+                android:background="@drawable/ic_refresh"
+                android:layout_marginRight="12dp"
+                android:layout_toLeftOf="@id/btn_menu"
+                />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom"
+            android:layout_width="match_parent"
+            android:layout_height="10dp"
+            android:layout_below="@id/rl_action">
+
+        </RelativeLayout>
+    </RelativeLayout>
+
+
+</merge>

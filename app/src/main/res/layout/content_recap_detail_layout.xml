@@ -1,0 +1,360 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:id="@+id/ll_recap_detail_msg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingBottom="20dp"
+        android:visibility="visible"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/please_select_the_content_you_wish_to_recap"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="10dp"
+            android:textColor="@color/font_colorBlack"/>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/you_can_do_this_in_one_of_the_following_ways"
+            android:textSize="17dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="12dp"
+            android:textColor="@color/font_colorBlack"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/check_the_select_box_next_to_a_chapter_name_to_select_all_content_under_the_chapter_you_can_select_multiple_chapters"/>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/similarly_there_is_a_select_option_next_to_each_topic_again_mutiple_topicscan_be_selected"/>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <ImageButton
+                android:layout_width="8dp"
+                android:layout_height="8dp"
+                android:layout_marginTop="7dp"
+                android:background="@drawable/dot_bullet"
+                android:layout_marginRight="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="10dp"
+                android:padding="2dp"
+                android:textColor="@color/font_colorBlack"
+                android:text="@string/you_can_also_select_individual_content_items"/>
+
+        </LinearLayout>
+
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:background="@color/colorGrey_lightline"></View>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp">
+
+            <CheckBox
+                android:id="@+id/cb_showMsgAgain_recap"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="10dp"
+                android:button="@drawable/checkbox_selector" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="2dp"
+                android:textStyle="bold"
+                android:textColor="@color/font_colorBlack"
+                android:textSize="17dp"
+                android:text="Dont show this message again"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btn_proceed_recap"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Proceed"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="30dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:layout_marginBottom="1dp"
+            android:background="@drawable/bg_btn_roundcorner_green"/>
+
+    </LinearLayout>
+<!--
+    -&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;&#45;
+-->
+    <LinearLayout
+        android:id="@+id/ll_recap_detail_audioplay"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="gone"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/txt_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playing"
+                    android:textStyle="bold"
+                    android:textColor="@color/font_colorBlack"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="'Structure of DNA'"
+                    android:textStyle="bold"
+                    android:paddingLeft="7dp"
+                    android:layout_toRightOf="@id/txt_playing"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18dp"
+                    />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="370sp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/colorGrey_lightline">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_recapFragment"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dna"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_prevoius"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/btn_prevoius"
+                    android:layout_width="23dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rc_previous"
+                    android:layout_centerVertical="true"
+
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:layout_toRightOf="@id/btn_prevoius"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+
+                <Button
+                    android:id="@+id/btn_rstart_recap"
+                    android:layout_width="50dp"
+                    android:layout_height="50dp"
+                    android:background="@drawable/rc_play"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rprevious_recap"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_audio_back"
+                    android:layout_toLeftOf="@id/btn_rstart_recap"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rpause_recap"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/btn_rstart_recap"
+                    android:background="@drawable/rc_push"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_next"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/btn_next_a"
+                    android:layout_width="23dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rc_next"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:layout_toLeftOf="@id/btn_next_a"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:textSize="15dp"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_playAns_recap"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Play Answer"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_roundcorner_green"/>
+
+    </LinearLayout>
+</merge>

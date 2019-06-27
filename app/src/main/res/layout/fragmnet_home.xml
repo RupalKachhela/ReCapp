@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="@color/colorWhite">
+
+    <RelativeLayout
+        android:id="@+id/actionbar_home"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/actionbar_home"
+        >
+
+        <ImageView
+            android:id="@+id/img_add"
+            android:layout_width="50dp"
+            android:layout_height="49dp"
+            android:padding="12dp"
+            android:src="@drawable/rc_plus_white"
+            android:background="@color/font_colorBlack"
+            android:layout_alignParentRight="true"/>
+
+    </RelativeLayout>
+
+    <android.support.design.widget.TabLayout
+        android:id="@+id/tabs"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:tabTextColor="@color/greyText"
+        android:layout_below="@id/actionbar_home"
+        app:tabTextAppearance="@style/homeTabTheme"
+        app:tabSelectedTextColor="@color/font_colorBlack"
+        app:tabIndicatorColor="@color/colorOrange"
+        app:tabIndicatorHeight="4dp"
+        app:tabMode="scrollable"
+        app:tabMinWidth="70dp"
+        android:layout_marginRight="52dp"
+        />
+
+    <View
+        android:id="@+id/line_userprofile_item"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_below="@id/tabs"
+        android:layout_marginRight="50dp"
+        android:background="@color/colorGrey_lightline" />
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_selectSubject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/rl_tabs"
+        android:visibility="gone"
+        >
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Select Subject"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="#C9C9C9"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_select_subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:textColorHint="@color/colorOffWhite"
+                android:textColor="@color/font_colorBlack"
+                android:inputType="none"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text=""
+                android:backgroundTint="@color/colorWhite"
+                android:paddingRight="50dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionDone"
+                android:gravity="end"/>
+
+
+            <ImageButton
+                android:id="@+id/btn_petReg_sp_breed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/ic_down"
+                />
+
+    </RelativeLayout>
+    <android.support.v4.view.ViewPager
+        android:id="@+id/viewpager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:layout_below="@id/rl_selectSubject"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+</RelativeLayout>

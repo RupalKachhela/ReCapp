@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:fitsSystemWindows="true"
+    android:background="@color/colorWhite">
+
+    <include layout="@layout/layout_home_actionbar"
+        android:id="@+id/actionbar_home"></include>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <RelativeLayout
+            android:id="@+id/rl_select_subject_record"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:text="Select Subject"
+                android:textSize="18dp"
+                android:textStyle="bold"
+                android:textColor="#C9C9C9"
+                android:layout_marginLeft="12dp"
+                android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_selcet_subject_recap"
+                android:layout_width="200dp"
+                android:layout_height="50dp"
+                android:backgroundTint="@color/colorWhite"
+                android:inputType="none"
+                android:layout_alignParentRight="true"
+                android:focusableInTouchMode="false"
+                android:textColorHint="@color/colorOffWhite"
+                android:textColor="@color/font_colorBlack"
+                android:textStyle="bold"
+                android:text="Biology"
+                android:imeOptions="actionNext"
+                android:gravity="end"
+                android:layout_marginRight="50dp"/>
+
+            <ImageButton
+                android:id="@+id/btn_petReg"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rc_down_arrow"
+                />
+
+        </RelativeLayout>
+
+        <include layout="@layout/content_recap__returnans_fragmnet"
+            android:id="@+id/content_register"
+            ></include>
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,213 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:layout_weight="5"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:gravity="center_vertical">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="3">
+
+                <TextView
+                    android:id="@+id/txt_playing"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Playing"
+                    android:textStyle="bold"
+                    android:textColor="@color/font_colorBlack"
+                    android:textSize="18dp"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="'Structure of DNA'"
+                    android:textStyle="bold"
+                    android:paddingLeft="7dp"
+                    android:layout_toRightOf="@id/txt_playing"
+                    android:textColor="@color/colorGreen"
+                    android:textSize="18dp"
+                    />
+            </RelativeLayout>
+
+
+        </LinearLayout>
+
+        <View
+            android:id="@+id/line"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline"></View>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="370sp"
+
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                app:cardBackgroundColor="@color/colorGrey_lightline">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageView
+                        android:id="@+id/img_recaplist"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/dna"
+                        android:scaleType="fitXY"
+                        />
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_bottom_revise"
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginRight="15dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginBottom="10dp"
+            android:layout_marginTop="10dp"
+            android:visibility="visible"
+            >
+
+            <RelativeLayout
+                android:id="@+id/rl_prevoius_recap"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true">
+
+                <RelativeLayout
+                    android:id="@+id/btn_prevoius"
+                    android:layout_width="23dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rc_previous"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Previous"
+                    android:layout_toRightOf="@id/btn_prevoius"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:paddingLeft="5dp"
+                    android:textSize="15dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="80dp"
+                android:layout_marginRight="80dp"
+                android:paddingLeft="10dp"
+                android:paddingRight="10dp"
+                >
+                <Button
+                    android:id="@+id/btn_rstart_record"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/rc_play"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rprevious_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_audio_back"
+                    android:layout_toLeftOf="@id/btn_rstart_record"
+                    android:scaleType="fitXY"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rpause_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_toRightOf="@id/btn_rstart_record"
+                    android:background="@drawable/rc_push"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+
+                    />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/rl_next_recap"
+                android:layout_width="100dp"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_alignParentRight="true"
+                >
+                <RelativeLayout
+                    android:id="@+id/btn_next_a"
+                    android:layout_width="23dp"
+                    android:layout_height="18dp"
+                    android:background="@drawable/rc_next"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Next"
+                    android:textSize="15dp"
+                    android:layout_toLeftOf="@id/btn_next_a"
+                    android:layout_centerVertical="true"
+                    android:textStyle="bold"
+                    android:paddingRight="5dp"
+                    android:textColor="@color/colorBlack"/>
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <Button
+            android:id="@+id/btn_return_recap"
+            android:layout_width="200dp"
+            android:layout_height="50dp"
+            android:text="Return"
+            android:textColor="@color/colorWhite"
+            android:textAllCaps="false"
+            android:textStyle="bold"
+            android:textSize="18dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="20dp"
+            android:layout_gravity="center"
+            android:background="@drawable/bg_btn_roundcorner_green"/>
+
+    </LinearLayout>
+</merge>

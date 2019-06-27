@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/fragment_play_audio"
+    tools:context=".fragment.PlayOwnAudioFragment"
+    android:background="@color/colorWhite">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp">
+
+        <TextView
+            android:id="@+id/tvTopicname"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:text=""
+            android:textColor="@color/cardview_dark_background"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:layout_marginBottom="5dp"/>
+
+        <android.support.v7.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="10dp">
+
+        <ImageView
+            android:id="@+id/iv_img"
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:scaleType="fitXY"/>
+
+        </android.support.v7.widget.CardView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_gravity="center"
+            android:layout_marginTop="10dp"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/btn_prevoius"
+                android:layout_width="25dp"
+                android:layout_height="35dp"
+                android:background="@drawable/ic_back"
+                android:layout_marginRight="20dp"
+                />
+            <Button
+              android:id="@+id/btn_play"
+              android:layout_width="40dp"
+              android:layout_height="40dp"
+              android:layout_gravity="center_horizontal|center"
+              android:background="@drawable/ic_play"/>
+
+                <Space
+                    android:layout_width="30dp"
+                    android:layout_height="wrap_content" />
+
+            <Button
+                android:id="@+id/btn_stop"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:background="@drawable/rc_hold"
+                android:layout_gravity="center_horizontal|center"/>
+
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="20dp"
+                android:layout_height="15dp"
+                android:background="@drawable/rc_next"
+                android:layout_marginLeft="20dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    </ScrollView>
+</FrameLayout>

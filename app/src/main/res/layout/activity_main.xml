@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:descendantFocusability="beforeDescendants"
+    android:focusableInTouchMode="true"
+    android:fitsSystemWindows="false"
+    android:background="@color/colorWhite"
+    tools:context=".activity.MainActivity">
+
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/action_home">
+
+             <include layout="@layout/layout_home_actionbar"
+                     ></include>
+        </RelativeLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_below="@id/action_home">
+
+
+             <FrameLayout
+            android:id="@+id/fl_main_container"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+               <!--  <include layout="@layout/layout_home_actionbar"
+                    ></include>-->
+        </FrameLayout>
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/colorGrey_lightline" />
+
+      <!--  <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+            android:paddingTop="5dp"
+            android:paddingBottom="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_marginLeft="5dp"
+            android:gravity="center_vertical|center_horizontal"
+            android:background="@color/bgColor">
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnRecord"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab1_circle_pink"
+                android:src="@drawable/unselect_record"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnBook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab2_circle_green"
+                android:src="@drawable/unselect_book"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                         />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnPaper"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab3_circle_purple"
+                android:src="@drawable/unselect_paper"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+               />
+           <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab4_circle_orange"
+                android:src="@drawable/unselect_delete"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end|center_vertical"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+        </LinearLayout>-->
+
+         <LinearLayout
+            android:id="@+id/tab_layout"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal"
+             android:weightSum="4"
+            >
+
+             <RelativeLayout
+                 android:id="@+id/rl_pink"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorPink"
+                 android:layout_weight="1">
+                 <ImageButton
+                     android:id="@+id/btnRecord"
+                     android:layout_width="68dp"
+                     android:layout_height="55dp"
+                     android:background="@drawable/tab1_circle_pink"
+                     android:src="@drawable/rc_unselected_redio"
+                     android:scaleType="fitXY"
+                     android:padding="10dp"
+                     android:layout_centerInParent="true"
+                     />
+             </RelativeLayout>
+
+             <RelativeLayout
+                 android:id="@+id/rl_purple"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorPurple"
+                 android:layout_weight="1">
+                 <ImageButton
+                     android:id="@+id/btnPaper"
+                     android:layout_width="65dp"
+                     android:layout_height="55dp"
+                     android:background="@drawable/tab3_circle_purple"
+                     android:src="@drawable/rc_unselected_revise"
+                     android:scaleType="fitXY"
+                     android:padding="10dp"
+                     android:layout_centerInParent="true"
+                     />
+             </RelativeLayout>
+             <RelativeLayout
+                 android:id="@+id/rl_green"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorGreen"
+                 android:layout_weight="1">
+                 <ImageButton
+                     android:id="@+id/btnBook"
+                     android:layout_width="65dp"
+                     android:layout_height="55dp"
+                     android:background="@drawable/tab2_circle_green"
+                     android:src="@drawable/rc_unselected_recap"
+                     android:scaleType="fitXY"
+                     android:padding="10dp"
+                     android:layout_centerInParent="true"
+                     />
+             </RelativeLayout>
+             <RelativeLayout
+                 android:id="@+id/rl_orange"
+                 android:layout_width="match_parent"
+                 android:layout_height="match_parent"
+                 android:background="@color/colorOrange"
+                 android:layout_weight="1">
+
+                 <ImageButton
+                     android:id="@+id/btnDelete"
+                     android:layout_width="68dp"
+                     android:layout_height="55dp"
+                     android:background="@drawable/tab4_circle_orange"
+                     android:src="@drawable/rc_unselected_delete"
+                     android:scaleType="fitXY"
+                     android:padding="10dp"
+                     android:layout_centerInParent="true"
+                     />
+             </RelativeLayout>
+           <!-- <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnRecord"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab1_circle_pink"
+                android:src="@drawable/unselect_record"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+            <ImageButton
+                android:id="@+id/btnBook"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab2_circle_green"
+                android:src="@drawable/unselect_book"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+                         />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnPaper"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab3_circle_purple"
+                android:src="@drawable/unselect_paper"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_centerHorizontal="true"
+               />
+           <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="20dp"
+                android:layout_height="wrap_content" />
+            <android.support.v4.widget.Space
+                android:layout_width="5dp"
+                android:layout_height="wrap_content" />
+
+            <ImageButton
+                android:id="@+id/btnDelete"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:background="@drawable/tab4_circle_orange"
+                android:src="@drawable/unselect_delete"
+                android:scaleType="fitXY"
+                android:padding="10dp"
+                android:layout_alignParentRight="true"
+                android:layout_gravity="end|center_vertical"
+                />
+            <android.support.v4.widget.Space
+                android:layout_width="10dp"
+                android:layout_height="wrap_content" />-->
+        </LinearLayout>
+    </LinearLayout>
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_drawer"
+        android:layout_width="200dp"
+        android:layout_height="match_parent"
+        android:fitsSystemWindows="true"
+        android:layout_alignParentRight="true"
+        android:orientation="vertical"
+        android:paddingLeft="20dp"
+        android:paddingTop="20dp"
+        android:visibility="gone"
+        android:background="@color/colorBlack_transaprent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/unselect_book"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Home"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/unselect_book"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Notification"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp">
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:src="@drawable/unselect_book"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Logout"
+                android:textSize="20dp"
+                android:paddingLeft="10dp"
+                android:textColor="@color/colorWhite"/>
+        </LinearLayout>
+    </LinearLayout>
+</RelativeLayout>

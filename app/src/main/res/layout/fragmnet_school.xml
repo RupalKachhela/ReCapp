@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:id="@+id/content_school"
+    android:background="@drawable/bg_relative_gradient"
+    >
+    <RelativeLayout
+        android:id="@+id/rl_selectSubject_school"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorWhite"
+        android:visibility="gone"
+        >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="50dp"
+            android:text="Select Subject"
+            android:textSize="18dp"
+            android:textStyle="bold"
+            android:textColor="@color/greyText"
+            android:layout_marginLeft="12dp"
+            android:gravity="center_vertical"/>
+
+            <EditText
+                android:id="@+id/edt_select_subject"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_alignParentRight="true"
+                android:textColorHint="@color/greyText"
+                android:textColor="@color/font_colorBlack"
+                android:inputType="none"
+                android:textStyle="bold"
+                android:maxLines="1"
+                android:text=""
+                android:backgroundTint="@color/colorWhite"
+                android:paddingRight="50dp"
+                android:focusable="false"
+                android:focusableInTouchMode="false"
+                android:imeOptions="actionDone"
+                android:textSize="18dp"
+                android:layout_marginTop="2dp"
+                android:gravity="end"/>
+
+            <ImageButton
+                android:id="@+id/btn_petReg_sp_breed"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentRight="true"
+                android:layout_centerVertical="true"
+                android:layout_marginRight="20dp"
+                android:background="@drawable/rc_down_arrow"
+                />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/container"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_relative_gradient"
+        android:visibility="gone"
+        android:padding="20dp"
+
+        >
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:id="@+id/rl_downloadcontainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_relative_gradient"
+        android:visibility="gone"
+        >
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_addContent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:visibility="visible"
+        android:gravity="center_horizontal"
+        android:paddingTop="60dp"
+        android:background="@drawable/bg_relative_gradient"
+        >
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_addSubject"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            android:layout_marginBottom="50dp"
+            app:cardBackgroundColor="@color/colorWhite"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/btnAdd_subjectHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/rc_add"
+                    android:backgroundTint="@color/greyText"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Add Your Own Content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/greyText"
+                    android:layout_below="@id/btnAdd_subjectHome"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_downloadContent"
+            android:layout_width="170dp"
+            android:layout_height="120dp"
+            app:cardCornerRadius="12dp"
+            android:elevation="5dp"
+            android:layout_below="@id/card_addSubject"
+            android:layout_marginTop="10dp"
+            app:cardBackgroundColor="@color/colorWhite"
+
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="15dp">
+
+                <Button
+                    android:id="@+id/btnlink_subjectHome"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:background="@drawable/ic_link"
+                    android:backgroundTint="@color/greyText"
+                    android:layout_centerHorizontal="true"
+                    />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Click to Download Content"
+                    android:gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:textStyle="bold"
+                    android:textSize="17dp"
+                    android:textColor="@color/greyText"
+                    android:layout_below="@id/btnlink_subjectHome"/>
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+    </RelativeLayout>
+
+    <!--  <TextView
+          android:layout_width="wrap_content"
+          android:layout_height="wrap_content"
+          android:text="School "
+          android:textSize="20dp"
+          android:textStyle="bold"
+          android:layout_marginTop="150dp"
+          android:layout_gravity="center"/>-->
+</LinearLayout>

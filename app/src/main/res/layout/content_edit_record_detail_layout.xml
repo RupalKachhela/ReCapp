@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:visibility="visible"
+        android:paddingBottom="20dp"
+        >
+
+      <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="60dp"
+        android:orientation="vertical"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:gravity="center_vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Definatin of DNA"
+                android:textStyle="bold"
+                android:textColor="@color/font_colorBlack"
+                android:textSize="18dp"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/for_example_say_definition_of_dna"
+                android:layout_below="@id/txt_playing"
+                android:textSize="15dp"
+                android:visibility="gone"
+                />
+
+    </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="300sp"
+            >
+            <android.support.v7.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="20dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="15dp"
+                android:layout_marginRight="15dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginBottom="15dp"
+                >
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    >
+
+                    <ImageView
+                        android:id="@+id/img_addphoto_record"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_placeholder"
+                        android:scaleType="centerCrop"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/img_edit_record"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rc_edit"
+                        android:layout_alignParentRight="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        />
+
+                    <RelativeLayout
+                        android:id="@+id/img_delete_record"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:background="@drawable/rc_delete_menu"
+                        android:layout_alignParentRight="true"
+                        android:scaleType="fitXY"
+                        android:layout_marginTop="-10dp"
+                        android:layout_below="@id/img_edit_record"/>
+
+                </RelativeLayout>
+            </android.support.v7.widget.CardView>
+        </RelativeLayout>
+
+
+       <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            >
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                >
+
+                <ImageButton
+                    android:id="@+id/btn_rstart_record"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:background="@drawable/rc_audio_restart"
+                    android:layout_centerHorizontal="true"
+                    android:layout_centerVertical="true"
+                    android:layout_margin="5dp"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rstop_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_hold"
+                    android:layout_toLeftOf="@id/btn_rstart_record"
+                    android:scaleType="fitXY"
+                    android:padding="8dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rprevious_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_audio_back"
+                    android:layout_toLeftOf="@id/btn_rstop_record"
+                    android:scaleType="fitXY"
+                    android:padding="5dp"
+                    android:layout_margin="5dp"
+                    android:layout_centerVertical="true"
+                    />
+
+                <ImageButton
+                    android:id="@+id/btn_rplay_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:background="@drawable/rc_play"
+                    android:layout_toRightOf="@id/btn_rpause_record"
+                    android:scaleType="fitXY"
+                    android:layout_margin="5dp"
+                    android:padding="8dp"
+                    android:layout_centerVertical="true"
+                    />
+                <ImageButton
+                    android:id="@+id/btn_rpause_record"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:layout_margin="5dp"
+                    android:layout_toRightOf="@id/btn_rstart_record"
+                    android:background="@drawable/rc_push"
+                    android:layout_centerVertical="true"
+                    />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:id="@+id/rl_next_editrecord"
+            android:layout_width="100dp"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_gravity="right"
+            android:layout_marginTop="50dp"
+            android:layout_marginLeft="15dp"
+            android:layout_marginRight="15dp"
+
+            >
+            <Button
+                android:id="@+id/btn_next"
+                android:layout_width="25dp"
+                android:layout_height="20dp"
+                android:background="@drawable/rc_next"
+                android:layout_alignParentRight="true"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Next"
+                android:paddingRight="5dp"
+                android:layout_toLeftOf="@id/btn_next"
+                android:layout_centerVertical="true"
+                android:textStyle="bold"
+                android:paddingLeft="5dp"
+                android:textSize="15dp"
+                android:textColor="@color/colorBlack"/>
+
+        </RelativeLayout>
+
+    </LinearLayout>
+
+
+</merge>

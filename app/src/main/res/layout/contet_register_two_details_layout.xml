@@ -1,0 +1,344 @@
+<?xml version="1.0" encoding="utf-8"?>
+<merge
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        >
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="10dp"
+            android:layout_marginBottom="18dp"
+            >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_rollNo_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Roll Number"
+                    android:inputType="number"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_class_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_class_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Class"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_level_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_level_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Level"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_batch_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_batch_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Batch"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_petReg_breed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_timing_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="18dp"
+            android:visibility="gone"
+
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_time_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Timings"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+                <ImageButton
+                    android:id="@+id/btn__sp_breed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_subject_register"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            android:visibility="gone"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_subject_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Subjects"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_petReg_sp_breed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_schoolName_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="School Name"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </LinearLayout>
+
+        </android.support.v7.widget.CardView>
+        <android.support.v7.widget.CardView
+            android:id="@+id/card_batch_payment"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:visibility="gone"
+            android:layout_gravity="center_horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_batch_makepayment"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Batch"
+                    android:inputType="none"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:imeOptions="actionNext"
+                    android:gravity="center"/>
+
+                <ImageButton
+                    android:id="@+id/btn_petR_breed"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:layout_marginRight="20dp"
+                    android:background="@drawable/rc_down_arrow"
+                    />
+            </RelativeLayout>
+
+        </android.support.v7.widget.CardView>
+
+
+        <android.support.v7.widget.CardView
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            app:cardCornerRadius="28dp"
+            app:cardElevation="3dp"
+            android:layout_marginBottom="18dp"
+            android:layout_gravity="center_horizontal"
+            >
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <EditText
+                    android:id="@+id/edt_country_tutionRegister"
+                    android:layout_width="match_parent"
+                    android:layout_height="50dp"
+                    android:background="@drawable/bg_btn_roundcorner_white"
+                    android:hint="Country"
+                    android:focusableInTouchMode="false"
+                    android:textColorHint="@color/colorOffWhite"
+                    android:textColor="@color/colorOrange"
+                    android:inputType="none"
+                    android:imeOptions="actionDone"
+                    android:gravity="center"
+                    android:paddingLeft="5dp"
+                    android:paddingRight="5dp"/>
+
+            </RelativeLayout>
+        </android.support.v7.widget.CardView>
+
+    </LinearLayout>
+</merge>
